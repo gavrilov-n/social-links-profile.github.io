@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('ttf');
+
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('ttf');
+
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('ttf');
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --buttons-green: hsl(75, 94%, 57%);
+    --text-color-white: hsl(0, 0%, 100%);
+    --button-bg-grey-700: #333333;
+    --card-bg-grey-800: #1f1f1f;
+    --bg-grey-900: #141414;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    gap: 24px;
+}
+
+.card-formatting {
+    margin-top: auto;
+    min-height: 611px;
+    min-width: 385px;
+    background-color: var(--card-bg-grey-800);
+}
+
+.avatar {
+    height: 88px;
+    width: 88px;
+    border-radius: 50px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--text-color-white);
+}
+
+h2{
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--buttons-green);
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: var(--text-color-white);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+
+.button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0px;
+    border-radius: 8px;
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    background-color: #333333;
+    color: var(--text-color-white);
+    width: 304px;
+    height: 45px;
+}
+
+.button:hover {
+    background-color: var(--buttons-green);
+    cursor: pointer;
+    color: var(--bg-grey-900);
+}
+
+.attribution {
+    margin-top: auto;
+}
