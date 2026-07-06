@@ -63,6 +63,14 @@ body {
     background-color: var(--card-bg-grey-800);
 }
 
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
 .avatar {
     height: 88px;
     width: 88px;
